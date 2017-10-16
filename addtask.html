@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FlexiTask</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <body>
+
+      <div class="container">
+        <div class="header clearfix">
+          <nav>
+
+            <div class="navbar-header">
+              <a class="navbar-brand text-muted">FlexiTask</a>
+            </div>
+
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation"><a href="index.html">Home</a></li>
+              <li role="presentation" class="active"><a href="addtask.html">Add Task</a></li>
+              <li role="presentation"><a href="categories.html">Manage Categories</a></li>
+            </ul>
+          </nav>
+          <!-- <h3 class="text-muted">FlexiTask</h3> -->
+        </div>
+
+        <div class="row marketing">
+          <div class="col-lg-12">
+            <h2 class="page-header">Add Task</h2>
+
+            <form action="" id="add_task">
+              <div class="form-group">
+                <label>Task Name</label>
+                <input type="text" name="task_name" id="task_name" class="form-control" placeholder="Task Name">
+              </div>
+
+              <div class="form-group">
+                <label>Category</label>
+                <select id="category" name="category" class="form-control">
+                  <!-- within this select element, we want to dynamically generate the options in here -->
+                </select>
+
+              </div>
+
+              <div class="form-group">
+                <label>Due Date</label>
+                <input type="date" name="due_date" id="due_date" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label>Urgent</label>
+                <select id="is_urgent" name="is_urgent" class="form-control">
+                  <!-- within this select element, we want to dynamically generate the options in here -->
+                  <option value="false">No</option>
+                  <option value="true">Yes</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>&copy; 2017, <a href="http://laydurafe.com" target="_blank">laydurafe.com</a></p>
+        </footer>
+
+      </div> <!-- /container -->
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

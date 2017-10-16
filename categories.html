@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FlexiTask</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <body>
+
+      <div class="container">
+        <div class="header clearfix">
+          <nav>
+
+            <div class="navbar-header">
+              <a class="navbar-brand text-muted">FlexiTask</a>
+            </div>
+
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation"><a href="index.html">Home</a></li>
+              <li role="presentation"><a href="addtask.html">Add Task</a></li>
+              <li role="presentation" class="active"><a href="categories.html">Manage Categories</a></li>
+            </ul>
+            <!-- <h3 class="text-muted">FlexiTask</h3> -->
+
+          </nav>
+
+        </div>
+
+        <div class="row marketing">
+          <div class="col-lg-12">
+            <h2 class="page-header">Categories</h2>
+            <a href="addcategory.html">Add Category</a>
+            <br>
+            <br>
+            <div id="categories">
+              <!-- placeholder div for tasks; tasks shall be inserted dynamically through jquery -->
+            </div>
+
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>&copy; 2017, <a href="http://laydurafe.com" target="_blank">laydurafe.com</a></p>
+        </footer>
+
+      </div> <!-- /container -->
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
